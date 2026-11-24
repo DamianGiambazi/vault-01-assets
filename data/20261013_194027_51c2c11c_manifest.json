@@ -1,0 +1,338 @@
+{
+  "schema_version": "2.0",
+  "tool": "vector-snake",
+  "version": "2.0.0",
+  "created_utc": "2026-10-13T17:40:50+00:00",
+  "source": {
+    "file": "51c2c11c.txt",
+    "path": "C:\\Dev\\vector-snake\\TXT_input\\51c2c11c.txt",
+    "bytes": 14880,
+    "sha256": "51c2c11c600117e72c3b2f08408831f0286e2862b82cb47ba472399d5683bbf4"
+  },
+  "extraction": {
+    "format": "txt",
+    "extractor": "plain/strict-decode",
+    "encoding": "utf-8",
+    "metadata": {
+      "bytes": 14880,
+      "sha256": "51c2c11c600117e72c3b2f08408831f0286e2862b82cb47ba472399d5683bbf4"
+    },
+    "warnings": []
+  },
+  "normalization": {
+    "original_chars": 14874,
+    "normalized_chars": 14625,
+    "normalized_sha256": "cee88de33c12701fae46e07a085fa9560694fa2616656cc093fdf9799dca70e9",
+    "operations": {
+      "crlf_to_lf": 249
+    },
+    "wrap_joins": []
+  },
+  "chunking": {
+    "strategy": "recursive-paragraph-line-sentence-word-guarded-character",
+    "max_chars": 1000,
+    "overlap": 120,
+    "min_chunk_chars": 40,
+    "chunk_count": 21,
+    "base_coverage_chars": 14625,
+    "auto_fit_adjustments": []
+  },
+  "embedding": {
+    "model": "all-MiniLM-L6-v2",
+    "device": "cpu",
+    "vector_dim": 384,
+    "normalize_embeddings": true,
+    "batch_size": 16,
+    "offline": false,
+    "token_telemetry": {
+      "available": true,
+      "max_seq_length": 256,
+      "min_tokens": 59,
+      "mean_tokens": 152.19,
+      "max_tokens": 225,
+      "over_budget_count": 0
+    }
+  },
+  "output": {
+    "csv": "20261013_194027_51c2c11c_vectors.csv",
+    "csv_sha256": "bb88f519dad825aece2f21ed58a8af1bc5955847e8ac820e80beb816f8464bd6",
+    "rows": 21,
+    "columns": [
+      "id",
+      "source_file",
+      "chunk_index",
+      "created_utc",
+      "embedding_model",
+      "vector_dim",
+      "text",
+      "vector_json"
+    ]
+  },
+  "audit": {
+    "status": "pass",
+    "checks": [
+      {
+        "name": "coverage_exact",
+        "passed": true,
+        "detail": "14625/14625 normalized characters covered by base spans."
+      },
+      {
+        "name": "spans_contiguous",
+        "passed": true,
+        "detail": "Base spans must not gap or overlap."
+      },
+      {
+        "name": "no_empty_chunks",
+        "passed": true,
+        "detail": "Every emitted chunk must contain text."
+      },
+      {
+        "name": "chunk_indices_unique",
+        "passed": true,
+        "detail": "Chunk indices must be unique and ordered."
+      },
+      {
+        "name": "chunk_indices_ordered",
+        "passed": true,
+        "detail": "Chunk indices must be 0..N-1."
+      },
+      {
+        "name": "no_midword_base_ends",
+        "passed": true,
+        "detail": "All base ends are safe."
+      },
+      {
+        "name": "no_midword_prefix_starts",
+        "passed": true,
+        "detail": "All prefixes are boundary-aligned."
+      },
+      {
+        "name": "min_chunk_size",
+        "passed": true,
+        "detail": "All chunks meet minimum size."
+      },
+      {
+        "name": "max_chunk_size",
+        "passed": true,
+        "detail": "All chunks within budget."
+      },
+      {
+        "name": "vector_count_matches",
+        "passed": true,
+        "detail": "21 vectors for 21 chunks."
+      },
+      {
+        "name": "vector_dim_consistent",
+        "passed": true,
+        "detail": "Observed dimensions: [384]"
+      },
+      {
+        "name": "vector_values_finite",
+        "passed": true,
+        "detail": "No NaN or Infinity values."
+      },
+      {
+        "name": "expected_dim_matches",
+        "passed": true,
+        "detail": "Expected 384, observed 384."
+      },
+      {
+        "name": "csv_roundtrip",
+        "passed": true,
+        "detail": "21 rows re-read and validated."
+      }
+    ],
+    "warnings": []
+  },
+  "chunks": [
+    {
+      "index": 0,
+      "chars": 376,
+      "base_start": 0,
+      "base_end": 378,
+      "prefix_start": null,
+      "prefix_end": null,
+      "text_sha256": "119a86ac21a3281206f05fc57a048975b9f23c50c014a19e31a166e7dac60862"
+    },
+    {
+      "index": 1,
+      "chars": 1070,
+      "base_start": 378,
+      "base_end": 1329,
+      "prefix_start": 258,
+      "prefix_end": 378,
+      "text_sha256": "d637d83d3da447e8e8b05c3f86da5c787ab3e7f247befb326b32189292f767dd"
+    },
+    {
+      "index": 2,
+      "chars": 1024,
+      "base_start": 1329,
+      "base_end": 2240,
+      "prefix_start": 1215,
+      "prefix_end": 1329,
+      "text_sha256": "491d4a1129eea4af5893312493c84a0ec6a17162a1bb95ac99429016c1a70821"
+    },
+    {
+      "index": 3,
+      "chars": 470,
+      "base_start": 2240,
+      "base_end": 2591,
+      "prefix_start": 2120,
+      "prefix_end": 2240,
+      "text_sha256": "3e07766577d18a3024cba8673706b10a37339e735266d82d37ab52e648b26b58"
+    },
+    {
+      "index": 4,
+      "chars": 1095,
+      "base_start": 2591,
+      "base_end": 3569,
+      "prefix_start": 2474,
+      "prefix_end": 2591,
+      "text_sha256": "cec387fb97351c545ba4e197bbe8db7f4aa2f7eddd696ddecd81448501a643a0"
+    },
+    {
+      "index": 5,
+      "chars": 327,
+      "base_start": 3569,
+      "base_end": 3835,
+      "prefix_start": 3507,
+      "prefix_end": 3569,
+      "text_sha256": "51f5992f43494cae1c538dec495f23de5776b6d7858da15a206ff68fa94f5011"
+    },
+    {
+      "index": 6,
+      "chars": 1045,
+      "base_start": 3835,
+      "base_end": 4770,
+      "prefix_start": 3725,
+      "prefix_end": 3835,
+      "text_sha256": "c808e2c042d8c0baf75ac3ee1fcd614e48d0e81806befecdae9b3f625bdc0a80"
+    },
+    {
+      "index": 7,
+      "chars": 1051,
+      "base_start": 4770,
+      "base_end": 5713,
+      "prefix_start": 4662,
+      "prefix_end": 4770,
+      "text_sha256": "2634985af2d40a6ba6356b9b4c40b76a52d01c95a39c85e177051bacc45c35cf"
+    },
+    {
+      "index": 8,
+      "chars": 1012,
+      "base_start": 5713,
+      "base_end": 6651,
+      "prefix_start": 5638,
+      "prefix_end": 5713,
+      "text_sha256": "8c51e14b2e411d2c01ab1586be311b3d3c0e92fd9346571d6e9763507e9ed858"
+    },
+    {
+      "index": 9,
+      "chars": 254,
+      "base_start": 6651,
+      "base_end": 6786,
+      "prefix_start": 6531,
+      "prefix_end": 6651,
+      "text_sha256": "6e6063b7cb14b4d0895b02631abe587a334a95ccb4d2f94ae5782adb2d363e13"
+    },
+    {
+      "index": 10,
+      "chars": 1094,
+      "base_start": 6786,
+      "base_end": 7768,
+      "prefix_start": 6674,
+      "prefix_end": 6786,
+      "text_sha256": "6bf41a5265270e64b32b823767a65a2381fcaf42cd7f1db8e942f1f6584d008e"
+    },
+    {
+      "index": 11,
+      "chars": 358,
+      "base_start": 7768,
+      "base_end": 8021,
+      "prefix_start": 7662,
+      "prefix_end": 7768,
+      "text_sha256": "87813c4cedab3fce4501e461961e3cfa4412bcda2f110d8098d809126e31a862"
+    },
+    {
+      "index": 12,
+      "chars": 1117,
+      "base_start": 8021,
+      "base_end": 9020,
+      "prefix_start": 7903,
+      "prefix_end": 8021,
+      "text_sha256": "5f547dcb5c5540d78f92d741c8937bd3dc13ada4b08c83484a6472148ff88d12"
+    },
+    {
+      "index": 13,
+      "chars": 1094,
+      "base_start": 9020,
+      "base_end": 9999,
+      "prefix_start": 8904,
+      "prefix_end": 9020,
+      "text_sha256": "8ae5fccbf26e8f3c0c36cee78bfd223e0d261c03f4dd4a775e4f862be192a703"
+    },
+    {
+      "index": 14,
+      "chars": 786,
+      "base_start": 9999,
+      "base_end": 10669,
+      "prefix_start": 9882,
+      "prefix_end": 9999,
+      "text_sha256": "94b16f53363047d01d8eb6d1e92a14a94a444cc3dd7c14816a7f81caf205c1e9"
+    },
+    {
+      "index": 15,
+      "chars": 1054,
+      "base_start": 10669,
+      "base_end": 11603,
+      "prefix_start": 10549,
+      "prefix_end": 10669,
+      "text_sha256": "c639a0dfbd27269c24230d80293d5780de61484e7942821b306b1b310628dd75"
+    },
+    {
+      "index": 16,
+      "chars": 374,
+      "base_start": 11603,
+      "base_end": 11863,
+      "prefix_start": 11488,
+      "prefix_end": 11603,
+      "text_sha256": "f6498fe47e758513db094e3f193a12f701fdf5fb59311ea94341113b98162950"
+    },
+    {
+      "index": 17,
+      "chars": 1106,
+      "base_start": 11863,
+      "base_end": 12850,
+      "prefix_start": 11744,
+      "prefix_end": 11863,
+      "text_sha256": "a8a13c7f7ef6d99cc951aefb6550000e64e57b367d223c41f55149fdcebed461"
+    },
+    {
+      "index": 18,
+      "chars": 428,
+      "base_start": 12850,
+      "base_end": 13202,
+      "prefix_start": 12773,
+      "prefix_end": 12850,
+      "text_sha256": "cd32c9d96dbf780e728a251235c14c2fa4b50493676756e7e3bc509141c9acaa"
+    },
+    {
+      "index": 19,
+      "chars": 1007,
+      "base_start": 13202,
+      "base_end": 14095,
+      "prefix_start": 13087,
+      "prefix_end": 13202,
+      "text_sha256": "9dedb15eacbc004adba922da363fa5e2db8ac033d8b1ac71e1681b2ec337b668"
+    },
+    {
+      "index": 20,
+      "chars": 647,
+      "base_start": 14095,
+      "base_end": 14625,
+      "prefix_start": 13978,
+      "prefix_end": 14095,
+      "text_sha256": "fe5591fe4dea4def6cc7e50c872c340ab1cc416845c9639ff4cc5c51375db0a8"
+    }
+  ]
+}

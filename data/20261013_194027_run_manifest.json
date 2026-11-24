@@ -1,0 +1,117 @@
+{
+  "schema_version": "2.0",
+  "tool": "vector-snake",
+  "version": "2.0.0",
+  "run_id": "20261013_194027",
+  "started_utc": "2026-10-13T17:40:27+00:00",
+  "finished_utc": "2026-10-13T17:40:56+00:00",
+  "dry_run": false,
+  "config": {
+    "model": "all-MiniLM-L6-v2",
+    "device": "cpu",
+    "max_chars": 1000,
+    "overlap": 120,
+    "min_chunk_chars": 40,
+    "batch_size": 16,
+    "offline": false,
+    "join_hard_wraps": false,
+    "auto_fit": false,
+    "strict": false,
+    "lancedb": "",
+    "table": "kb_main",
+    "lancedb_mode": "replace-source"
+  },
+  "summary": {
+    "inputs": 1,
+    "passed": 1,
+    "warned": 0,
+    "failed": 0,
+    "skipped_empty": 0
+  },
+  "documents": [
+    {
+      "source": "C:\\Dev\\vector-snake\\TXT_input\\51c2c11c.txt",
+      "source_file": "51c2c11c.txt",
+      "status": "pass",
+      "outputs": {
+        "csv": "C:\\Dev\\vector-snake\\vectors_output\\20261013_194027_51c2c11c_vectors.csv",
+        "manifest": "C:\\Dev\\vector-snake\\vectors_output\\20261013_194027_51c2c11c_manifest.json"
+      },
+      "chunk_count": 21,
+      "vector_dim": 384,
+      "checks": [
+        {
+          "name": "coverage_exact",
+          "passed": true,
+          "detail": "14625/14625 normalized characters covered by base spans."
+        },
+        {
+          "name": "spans_contiguous",
+          "passed": true,
+          "detail": "Base spans must not gap or overlap."
+        },
+        {
+          "name": "no_empty_chunks",
+          "passed": true,
+          "detail": "Every emitted chunk must contain text."
+        },
+        {
+          "name": "chunk_indices_unique",
+          "passed": true,
+          "detail": "Chunk indices must be unique and ordered."
+        },
+        {
+          "name": "chunk_indices_ordered",
+          "passed": true,
+          "detail": "Chunk indices must be 0..N-1."
+        },
+        {
+          "name": "no_midword_base_ends",
+          "passed": true,
+          "detail": "All base ends are safe."
+        },
+        {
+          "name": "no_midword_prefix_starts",
+          "passed": true,
+          "detail": "All prefixes are boundary-aligned."
+        },
+        {
+          "name": "min_chunk_size",
+          "passed": true,
+          "detail": "All chunks meet minimum size."
+        },
+        {
+          "name": "max_chunk_size",
+          "passed": true,
+          "detail": "All chunks within budget."
+        },
+        {
+          "name": "vector_count_matches",
+          "passed": true,
+          "detail": "21 vectors for 21 chunks."
+        },
+        {
+          "name": "vector_dim_consistent",
+          "passed": true,
+          "detail": "Observed dimensions: [384]"
+        },
+        {
+          "name": "vector_values_finite",
+          "passed": true,
+          "detail": "No NaN or Infinity values."
+        },
+        {
+          "name": "expected_dim_matches",
+          "passed": true,
+          "detail": "Expected 384, observed 384."
+        },
+        {
+          "name": "csv_roundtrip",
+          "passed": true,
+          "detail": "21 rows re-read and validated."
+        }
+      ],
+      "warnings": []
+    }
+  ]
+}
